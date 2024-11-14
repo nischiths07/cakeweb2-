@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Delight</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Cake Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">(0)</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Black Forest</h2>
+        <img src="https://onlinekrishnasweets.com/wp-content/uploads/2021/08/BlackForestCake_a6458ba5-0d4f-4476-8f12-081175168d18_600x.jpg" alt="Black Forest Cake">
+        <p>A rich, moist chocolate cake with dark chocolate glaze.</p>
+        <p>Price: ₹549</p>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" value="1" min="1" required>
+        <button id="add-to-cart">Add to Cart</button>
+
+        <h3>Leave a Review</h3>
+        <form id="review-form">
+            <textarea id="review" placeholder="Write your review here..." required></textarea>
+            <button type="submit">Submit Review</button>
+        </form>
+
+        <h3>Reviews:</h3>
+        <ul id="reviews-list">
+            <!-- Reviews will be dynamically added here -->
+        </ul>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cake Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

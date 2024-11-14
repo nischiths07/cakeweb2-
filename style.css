@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #33b181; 
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cake-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.cake-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.cake-card:hover {
+    transform: scale(1.05);
+}
+
+.cake-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #33b181; 
+    color: #fff;
+    position: relative;
+}
+
+h2, h3 {
+    color: #33b181; 
+}
+#review-form {
+    margin-top: 20px;
+}
+
+#review {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+#review-form button {
+    background-color: #8B4513; 
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#review-form button:hover {
+    background-color: #a0522d; 
+}
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.cart-item button {
+    background-color: #dc143c;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-item button:hover {
+    background-color: #ff4500; 
+}
+@media (max-width: 600px) {
+    .cake-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cake-card {
+        width: 90%;
+    }
+}
